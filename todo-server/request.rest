@@ -1,0 +1,36 @@
+Get http://localhost:4000/api/notes
+Authorization: Bearer e247132d-73c8-4ff5-b1f7-1ecb27786a6b
+
+###
+POST http://localhost:4000/api/publish
+Content-Type: application/json
+Authorization: Bearer e247132d-73c8-4ff5-b1f7-1ecb27786a6b
+
+{
+    "title" : "task two",
+    "describe" : "kmvdkv.mkdfvmdfvk.."
+}
+
+###
+
+Get http://localhost:4000/api/delete/All
+
+###
+Get http://localhost:4000/api/642c7c4374ad74111d4a34ad
+
+###
+POST http://localhost:4000/api/register
+Content-Type: application/json
+
+{
+    "username" : "tr",
+    "password" : "123456"
+}
+###
+POST http://localhost:4000/api/login
+Content-Type: application/json
+
+{
+    "username" : "test",
+    "password" : "123456"
+}
