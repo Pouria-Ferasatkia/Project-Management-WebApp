@@ -1,7 +1,15 @@
+const { Role } = require("../../Role");
 const Note = require("../model/Note");
 const User = require("../model/User");
+const { use } = require("../routes/Route");
 
-
+(async() =>{
+  const user = await User.findOne({username:"test2"})
+  user.role = Role.ADMIN
+  await user.save()
+  console.log(user)
+ 
+})();
 
 exports.register = async (req, res) => {
 
@@ -17,7 +25,7 @@ exports.register = async (req, res) => {
 
   
   const newUser = await User.create({username:username,password:password}).catch(()=> {
-    return res.status(403).send({message:"error"})
+    return res.status(403).send({message:"error newuser"})
   })
   
   //res.cookie('cookieName',newUser.session, { httpOnly: true });
@@ -35,7 +43,7 @@ exports.login = async (req, res) => {
       return res.status(403).send({message:"username&password needed"})
     }
     const user = await User.findOne({username:username}).catch(() => {
-      return res.status(403).send({message:"error"})
+      return res.status(403).send({message:"error login"})
     })
     if(!user){
       return res.status(403).send({message:"User doesnt exist"})
@@ -49,6 +57,8 @@ exports.login = async (req, res) => {
     };
 
 exports.notes = async (req, res) => {
+
+  
   const user = req.user
   await Note.find({owner:user}).then((notes) => {
     res.status(200).send(notes);
@@ -60,7 +70,7 @@ exports.noteId = async (req, res) => {
     await Note.findById(id).then((note) => {
       return res.status(200).send(note);
     }).catch(() =>{
-      return res.status(403).send({message:"error"})
+      return res.status(403).send({message:"error noteid"})
     })
     };
   
@@ -68,16 +78,31 @@ exports.noteId = async (req, res) => {
 exports.publish = async (req, res) => {
     const title = req.body.title
     const describe = req.body.describe
-    const user = req.user
+    const username = req.body.username
+    const user = await User.findOne({username:username}).catch(() => {
+      return res.status(403).send({message:"error username"});
+    })
 
     if(!title){
       return res.status(403).send({message:"needed title"})
     }
     await Note.create({title:title,describe:describe,owner:user}).catch(() => {
-      return res.status(403).send({message:"error"})
+      return res.status(403).send({message:"error publish"})
     })
 
     return res.status(200).send({message:"ok"})
+  
+  };
+
+
+exports.getUsers = async (req, res) => {
+
+
+    const users = await User.find({}).select({ "username": 1, "_id": 0}).catch(() => {
+      return res.status(403).send({message:"why error"})
+    })
+
+    return res.status(200).send(users)
   
   };
 
@@ -92,5 +117,6 @@ exports.deleteAll = async (req, res) => {
     return res.status(200).send({message:"ok"})
   
   };
+
 
 

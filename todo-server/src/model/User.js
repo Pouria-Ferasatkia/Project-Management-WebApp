@@ -1,6 +1,8 @@
 const mongoose = require('mongoose')
 const bcrypt = require("bcrypt");
 const { v4: uuidv4 } = require('uuid');
+const { Role } = require('../../Role');
+
 
 const UserSchema = new mongoose.Schema({
     username:{
@@ -13,7 +15,13 @@ const UserSchema = new mongoose.Schema({
     },
     session:{
         type: String
+    },
+    role:{
+        type: String,
+        enum: Role,
+        default: Role.USER,
     }
+    
 }, {timestamps: true})
 
 UserSchema.pre('save', async function(next) { 

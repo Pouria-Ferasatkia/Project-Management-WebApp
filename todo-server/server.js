@@ -24,9 +24,8 @@ db.once("open", () => console.log("Connected to Database"));
 app.use(express.json());
 
 
-const userRouter = require('./src/routes/Route')
+const userRouter = require('./src/routes/Route');
 
 app.use('/api', userRouter)
-
 
 app.listen(4000, () => console.log("Server Started on port 4000"));
