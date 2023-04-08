@@ -5,6 +5,12 @@
     ],
     "/Users/pouria/Todoo/todo-client/app/page": [
       "/Users/pouria/Todoo/todo-client/app/globals.css"
+    ],
+    "/Users/pouria/Todoo/todo-client/app/notes/[id]/page": [
+      "/Users/pouria/Todoo/todo-client/app/globals.css"
+    ],
+    "/Users/pouria/Todoo/todo-client/app/register/page": [
+      "/Users/pouria/Todoo/todo-client/app/globals.css"
     ]
   },
   "/Users/pouria/Todoo/todo-client/app/layout.js": [

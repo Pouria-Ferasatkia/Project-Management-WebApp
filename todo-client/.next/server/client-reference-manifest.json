@@ -108,7 +108,7 @@
       "*": {
         "id": "(sc_client)/./node_modules/next/dist/client/link.js",
         "chunks": [
-          "app/notes/page:app/notes/page"
+          "app/notes/[id]/page:app/notes/[id]/page"
         ],
         "name": "*",
         "async": false
@@ -116,7 +116,7 @@
       "": {
         "id": "(sc_client)/./node_modules/next/dist/client/link.js",
         "chunks": [
-          "app/notes/page:app/notes/page"
+          "app/notes/[id]/page:app/notes/[id]/page"
         ],
         "name": "",
         "async": false
@@ -124,7 +124,7 @@
       "default": {
         "id": "(sc_client)/./node_modules/next/dist/client/link.js",
         "chunks": [
-          "app/notes/page:app/notes/page"
+          "app/notes/[id]/page:app/notes/[id]/page"
         ],
         "name": "default",
         "async": false
@@ -134,7 +134,7 @@
       "*": {
         "id": "(sc_client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
         "chunks": [
-          "app/notes/page:app/notes/page"
+          "app/notes/[id]/page:app/notes/[id]/page"
         ],
         "name": "*",
         "async": false
@@ -142,7 +142,7 @@
       "": {
         "id": "(sc_client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
         "chunks": [
-          "app/notes/page:app/notes/page"
+          "app/notes/[id]/page:app/notes/[id]/page"
         ],
         "name": "",
         "async": false
@@ -150,7 +150,7 @@
       "NoSSR": {
         "id": "(sc_client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
         "chunks": [
-          "app/notes/page:app/notes/page"
+          "app/notes/[id]/page:app/notes/[id]/page"
         ],
         "name": "NoSSR",
         "async": false
@@ -158,7 +158,7 @@
       "__esModule": {
         "id": "(sc_client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
         "chunks": [
-          "app/notes/page:app/notes/page"
+          "app/notes/[id]/page:app/notes/[id]/page"
         ],
         "name": "__esModule",
         "async": false
@@ -166,15 +166,15 @@
       "suspense": {
         "id": "(sc_client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
         "chunks": [
-          "app/notes/page:app/notes/page"
+          "app/notes/[id]/page:app/notes/[id]/page"
         ],
         "name": "suspense",
         "async": false
       }
     },
-    "(app-client)/./app/Register.js": {
+    "(app-client)/./app/Login.js": {
       "*": {
-        "id": "(sc_client)/./app/Register.js",
+        "id": "(sc_client)/./app/Login.js",
         "chunks": [
           "app/page:app/page"
         ],
@@ -182,7 +182,7 @@
         "async": false
       },
       "": {
-        "id": "(sc_client)/./app/Register.js",
+        "id": "(sc_client)/./app/Login.js",
         "chunks": [
           "app/page:app/page"
         ],
@@ -190,9 +190,35 @@
         "async": false
       },
       "default": {
-        "id": "(sc_client)/./app/Register.js",
+        "id": "(sc_client)/./app/Login.js",
         "chunks": [
           "app/page:app/page"
+        ],
+        "name": "default",
+        "async": false
+      }
+    },
+    "(app-client)/./app/register/page.js": {
+      "*": {
+        "id": "(sc_client)/./app/register/page.js",
+        "chunks": [
+          "app/register/page:app/register/page"
+        ],
+        "name": "*",
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./app/register/page.js",
+        "chunks": [
+          "app/register/page:app/register/page"
+        ],
+        "name": "",
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./app/register/page.js",
+        "chunks": [
+          "app/register/page:app/register/page"
         ],
         "name": "default",
         "async": false
@@ -720,7 +746,7 @@
   "/Users/pouria/Todoo/todo-client/node_modules/next/dist/client/link.js": {
     "id": "(app-client)/./node_modules/next/dist/client/link.js",
     "chunks": [
-      "app/notes/page:app/notes/page"
+      "app/notes/[id]/page:app/notes/[id]/page"
     ],
     "name": "*",
     "async": false
@@ -728,7 +754,7 @@
   "/Users/pouria/Todoo/todo-client/node_modules/next/dist/esm/client/link.js": {
     "id": "(app-client)/./node_modules/next/dist/client/link.js",
     "chunks": [
-      "app/notes/page:app/notes/page"
+      "app/notes/[id]/page:app/notes/[id]/page"
     ],
     "name": "*",
     "async": false
@@ -736,7 +762,7 @@
   "/Users/pouria/Todoo/todo-client/node_modules/next/dist/client/link.js#": {
     "id": "(app-client)/./node_modules/next/dist/client/link.js",
     "chunks": [
-      "app/notes/page:app/notes/page"
+      "app/notes/[id]/page:app/notes/[id]/page"
     ],
     "name": "",
     "async": false
@@ -744,7 +770,7 @@
   "/Users/pouria/Todoo/todo-client/node_modules/next/dist/esm/client/link.js#": {
     "id": "(app-client)/./node_modules/next/dist/client/link.js",
     "chunks": [
-      "app/notes/page:app/notes/page"
+      "app/notes/[id]/page:app/notes/[id]/page"
     ],
     "name": "",
     "async": false
@@ -752,7 +778,7 @@
   "/Users/pouria/Todoo/todo-client/node_modules/next/dist/client/link.js#default": {
     "id": "(app-client)/./node_modules/next/dist/client/link.js",
     "chunks": [
-      "app/notes/page:app/notes/page"
+      "app/notes/[id]/page:app/notes/[id]/page"
     ],
     "name": "default",
     "async": false
@@ -760,7 +786,7 @@
   "/Users/pouria/Todoo/todo-client/node_modules/next/dist/esm/client/link.js#default": {
     "id": "(app-client)/./node_modules/next/dist/client/link.js",
     "chunks": [
-      "app/notes/page:app/notes/page"
+      "app/notes/[id]/page:app/notes/[id]/page"
     ],
     "name": "default",
     "async": false
@@ -768,7 +794,7 @@
   "/Users/pouria/Todoo/todo-client/node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js": {
     "id": "(app-client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
     "chunks": [
-      "app/notes/page:app/notes/page"
+      "app/notes/[id]/page:app/notes/[id]/page"
     ],
     "name": "*",
     "async": false
@@ -776,7 +802,7 @@
   "/Users/pouria/Todoo/todo-client/node_modules/next/dist/esm/shared/lib/lazy-dynamic/dynamic-no-ssr.js": {
     "id": "(app-client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
     "chunks": [
-      "app/notes/page:app/notes/page"
+      "app/notes/[id]/page:app/notes/[id]/page"
     ],
     "name": "*",
     "async": false
@@ -784,7 +810,7 @@
   "/Users/pouria/Todoo/todo-client/node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js#": {
     "id": "(app-client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
     "chunks": [
-      "app/notes/page:app/notes/page"
+      "app/notes/[id]/page:app/notes/[id]/page"
     ],
     "name": "",
     "async": false
@@ -792,7 +818,7 @@
   "/Users/pouria/Todoo/todo-client/node_modules/next/dist/esm/shared/lib/lazy-dynamic/dynamic-no-ssr.js#": {
     "id": "(app-client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
     "chunks": [
-      "app/notes/page:app/notes/page"
+      "app/notes/[id]/page:app/notes/[id]/page"
     ],
     "name": "",
     "async": false
@@ -800,7 +826,7 @@
   "/Users/pouria/Todoo/todo-client/node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js#NoSSR": {
     "id": "(app-client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
     "chunks": [
-      "app/notes/page:app/notes/page"
+      "app/notes/[id]/page:app/notes/[id]/page"
     ],
     "name": "NoSSR",
     "async": false
@@ -808,7 +834,7 @@
   "/Users/pouria/Todoo/todo-client/node_modules/next/dist/esm/shared/lib/lazy-dynamic/dynamic-no-ssr.js#NoSSR": {
     "id": "(app-client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
     "chunks": [
-      "app/notes/page:app/notes/page"
+      "app/notes/[id]/page:app/notes/[id]/page"
     ],
     "name": "NoSSR",
     "async": false
@@ -816,7 +842,7 @@
   "/Users/pouria/Todoo/todo-client/node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js#__esModule": {
     "id": "(app-client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
     "chunks": [
-      "app/notes/page:app/notes/page"
+      "app/notes/[id]/page:app/notes/[id]/page"
     ],
     "name": "__esModule",
     "async": false
@@ -824,7 +850,7 @@
   "/Users/pouria/Todoo/todo-client/node_modules/next/dist/esm/shared/lib/lazy-dynamic/dynamic-no-ssr.js#__esModule": {
     "id": "(app-client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
     "chunks": [
-      "app/notes/page:app/notes/page"
+      "app/notes/[id]/page:app/notes/[id]/page"
     ],
     "name": "__esModule",
     "async": false
@@ -832,7 +858,7 @@
   "/Users/pouria/Todoo/todo-client/node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js#suspense": {
     "id": "(app-client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
     "chunks": [
-      "app/notes/page:app/notes/page"
+      "app/notes/[id]/page:app/notes/[id]/page"
     ],
     "name": "suspense",
     "async": false
@@ -840,31 +866,55 @@
   "/Users/pouria/Todoo/todo-client/node_modules/next/dist/esm/shared/lib/lazy-dynamic/dynamic-no-ssr.js#suspense": {
     "id": "(app-client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
     "chunks": [
-      "app/notes/page:app/notes/page"
+      "app/notes/[id]/page:app/notes/[id]/page"
     ],
     "name": "suspense",
     "async": false
   },
-  "/Users/pouria/Todoo/todo-client/app/Register.js": {
-    "id": "(app-client)/./app/Register.js",
+  "/Users/pouria/Todoo/todo-client/app/Login.js": {
+    "id": "(app-client)/./app/Login.js",
     "chunks": [
       "app/page:app/page"
     ],
     "name": "*",
     "async": false
   },
-  "/Users/pouria/Todoo/todo-client/app/Register.js#": {
-    "id": "(app-client)/./app/Register.js",
+  "/Users/pouria/Todoo/todo-client/app/Login.js#": {
+    "id": "(app-client)/./app/Login.js",
     "chunks": [
       "app/page:app/page"
     ],
     "name": "",
     "async": false
   },
-  "/Users/pouria/Todoo/todo-client/app/Register.js#default": {
-    "id": "(app-client)/./app/Register.js",
+  "/Users/pouria/Todoo/todo-client/app/Login.js#default": {
+    "id": "(app-client)/./app/Login.js",
     "chunks": [
       "app/page:app/page"
+    ],
+    "name": "default",
+    "async": false
+  },
+  "/Users/pouria/Todoo/todo-client/app/register/page.js": {
+    "id": "(app-client)/./app/register/page.js",
+    "chunks": [
+      "app/register/page:app/register/page"
+    ],
+    "name": "*",
+    "async": false
+  },
+  "/Users/pouria/Todoo/todo-client/app/register/page.js#": {
+    "id": "(app-client)/./app/register/page.js",
+    "chunks": [
+      "app/register/page:app/register/page"
+    ],
+    "name": "",
+    "async": false
+  },
+  "/Users/pouria/Todoo/todo-client/app/register/page.js#default": {
+    "id": "(app-client)/./app/register/page.js",
+    "chunks": [
+      "app/register/page:app/register/page"
     ],
     "name": "default",
     "async": false
