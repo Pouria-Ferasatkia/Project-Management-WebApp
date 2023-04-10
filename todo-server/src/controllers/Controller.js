@@ -79,13 +79,18 @@ exports.publish = async (req, res) => {
     const title = req.body.title
     const describe = req.body.describe
     const username = req.body.username
+    if(!title || !username || !describe){
+      return res.status(403).send({message:"needed body"})
+    }
+
     const user = await User.findOne({username:username}).catch(() => {
       return res.status(403).send({message:"error username"});
     })
 
-    if(!title){
-      return res.status(403).send({message:"needed title"})
+    if(!user){
+      return res.status(403).send({message:"invalid username"})
     }
+
     await Note.create({title:title,describe:describe,owner:user}).catch(() => {
       return res.status(403).send({message:"error publish"})
     })
@@ -117,6 +122,20 @@ exports.deleteAll = async (req, res) => {
     return res.status(200).send({message:"ok"})
   
   };
+
+
+  exports.checkAdmin = async (req, res) => {
+
+    return res.status(200).send({message:"its admin"})
+  
+  };
+
+  exports.checkAuth = async (req, res) => {
+
+    return res.status(200).send({message:"its auth"})
+  
+  };
+
 
 
 
