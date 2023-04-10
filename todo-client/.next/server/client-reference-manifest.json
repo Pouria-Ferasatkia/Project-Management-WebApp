@@ -198,6 +198,32 @@
         "async": false
       }
     },
+    "(app-client)/./app/publish/FormPublish.js": {
+      "*": {
+        "id": "(sc_client)/./app/publish/FormPublish.js",
+        "chunks": [
+          "app/publish/page:app/publish/page"
+        ],
+        "name": "*",
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./app/publish/FormPublish.js",
+        "chunks": [
+          "app/publish/page:app/publish/page"
+        ],
+        "name": "",
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./app/publish/FormPublish.js",
+        "chunks": [
+          "app/publish/page:app/publish/page"
+        ],
+        "name": "default",
+        "async": false
+      }
+    },
     "(app-client)/./app/register/page.js": {
       "*": {
         "id": "(sc_client)/./app/register/page.js",
@@ -891,6 +917,30 @@
     "id": "(app-client)/./app/Login.js",
     "chunks": [
       "app/page:app/page"
+    ],
+    "name": "default",
+    "async": false
+  },
+  "/Users/pouria/Todoo/todo-client/app/publish/FormPublish.js": {
+    "id": "(app-client)/./app/publish/FormPublish.js",
+    "chunks": [
+      "app/publish/page:app/publish/page"
+    ],
+    "name": "*",
+    "async": false
+  },
+  "/Users/pouria/Todoo/todo-client/app/publish/FormPublish.js#": {
+    "id": "(app-client)/./app/publish/FormPublish.js",
+    "chunks": [
+      "app/publish/page:app/publish/page"
+    ],
+    "name": "",
+    "async": false
+  },
+  "/Users/pouria/Todoo/todo-client/app/publish/FormPublish.js#default": {
+    "id": "(app-client)/./app/publish/FormPublish.js",
+    "chunks": [
+      "app/publish/page:app/publish/page"
     ],
     "name": "default",
     "async": false

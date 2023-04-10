@@ -32,7 +32,11 @@ export default function Login() {
     if(res.status === 200){
       const response = await res.json()
       Cookies.set('auth', response.message)
-      router.push('/notes')
+      if(data.username === "test2"){
+        router.push('/publish')
+      } else{
+          router.push('/notes')
+      }
     }
     
 

@@ -18,7 +18,7 @@ async function getNotes(){
     console.log(auth)
 
     if(res.status!= 200){
-        redirect('/');
+        throw new Error('Failed to fetch data');
     }
     const data = await res.json()
     return data
